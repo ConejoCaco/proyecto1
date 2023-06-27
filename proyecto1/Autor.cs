@@ -6,34 +6,21 @@ using System.Threading.Tasks;
 
 namespace proyecto1
 {
-	internal class Autor
+	internal class Autor : Persona
 	{
-		private string nombre;
 		private string apellido;
-		private string rut;
 		private string nacionalidad;
-		public string Nombre
-		{
-			get { return nombre; }
-			set { nombre = value; }
-		}
 
-		public string Apellido
-		{
-			get { return apellido; }
-			set { apellido = value; }
-		}
+        public string Apellido
+        {
+           get { return apellido; }
+           set { apellido = value; }
+        }
 
-		public string Rut
-		{
-			get { return rut; }
-			set { rut = value; }
-		}
-
-		public string Nacionalidad
-		{
-			get { return nacionalidad; }
-			set { nacionalidad = value; }
-		}
+        public string Nacionalidad
+        {
+            get { return nacionalidad; }
+            set { nacionalidad = value; }
+        }
 	}
 }

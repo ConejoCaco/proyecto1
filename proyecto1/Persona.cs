@@ -8,5 +8,8 @@ namespace proyecto1
 {
 	internal class Persona
 	{
+		//nose si hacerlos protected y el set get
+		public string nombre;
+		public string rut;
 	}
 }

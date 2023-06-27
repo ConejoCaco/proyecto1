@@ -6,20 +6,10 @@ using System.Threading.Tasks;
 
 namespace proyecto1
 {
-	class Encargado
+	class Encargado : Persona
 	{
-		private string nombre, rut, profesion;
+		private string profesion;
 		private int anioIngreso;
-
-		public string Nombre{
-			get { return nombre; }
-			set {  nombre = value; }
-		}
-        public string Rut
-        {
-            get { return rut; }
-            set { rut = value; }
-        }
 
         public string Profesion
         {

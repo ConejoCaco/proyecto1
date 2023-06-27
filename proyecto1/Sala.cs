@@ -8,6 +8,7 @@ namespace proyecto1
 {
 	class Sala
 	{
+        //la pintura que se encuentra dentro con el encargado creo*2 
 		private string nombreSala;
 		private bool tieneCierre, tieneAlarma;
 		private float temperatura;
