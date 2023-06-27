@@ -8,5 +8,19 @@ namespace proyecto1
 {
 	internal class Tamanio
 	{
+		private float ancho;
+		private float alto;
+
+		public float Ancho
+		{
+			get { return ancho; }
+			set { ancho = value; }
+		}
+
+		public float Alto
+		{
+			get { return alto; }
+			set { alto = value; }
+		}
 	}
 }

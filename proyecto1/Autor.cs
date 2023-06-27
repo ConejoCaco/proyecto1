@@ -8,9 +8,32 @@ namespace proyecto1
 {
 	internal class Autor
 	{
-		string Nombre;
-		string Apellido;
-		string Rut;
-		string Nacionalidad;
+		private string nombre;
+		private string apellido;
+		private string rut;
+		private string nacionalidad;
+		public string Nombre
+		{
+			get { return nombre; }
+			set { nombre = value; }
+		}
+
+		public string Apellido
+		{
+			get { return apellido; }
+			set { apellido = value; }
+		}
+
+		public string Rut
+		{
+			get { return rut; }
+			set { rut = value; }
+		}
+
+		public string Nacionalidad
+		{
+			get { return nacionalidad; }
+			set { nacionalidad = value; }
+		}
 	}
 }
