@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace proyecto1
 {
-	internal class Tamanio
+	class Tamanio
 	{
 		private float ancho;
 		private float alto;
