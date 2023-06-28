@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace proyecto1
 {
-	internal class Autor : Persona
+	public class Autor : Persona
 	{
 		private string apellido;
 		private string nacionalidad;
@@ -30,6 +30,7 @@ namespace proyecto1
 			this.apellido = apellido;
 			this.nacionalidad = nacionalidad;
 		}
+	
 		public void Mostrar()
 		{
 			Console.WriteLine("Datos del Autor\n");

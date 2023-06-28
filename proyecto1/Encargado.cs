@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace proyecto1
 {
-	class Encargado : Persona
+	public class Encargado : Persona
 	{
 		private string profesion;
 		private string anioIngreso;

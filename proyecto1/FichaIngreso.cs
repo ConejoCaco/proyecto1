@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace proyecto1
 {
-	internal class FichaIngreso
+	class FichaIngreso
 	{
 		Sala sala;
 		Pintura pintura;

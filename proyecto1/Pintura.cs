@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace proyecto1
 {
-	internal class Pintura
+	public class Pintura
 	{
 		private string nombre, tecnica, genero;
 		private string fechaCreacion;
