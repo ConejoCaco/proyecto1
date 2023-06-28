@@ -1,4 +1,5 @@
 ﻿using proyecto1;
+using System.Reflection;
 using System.Security.Cryptography.X509Certificates;
 
 class Program
@@ -54,10 +55,33 @@ class Program
 			pinturas.Add(pintura);
 			autores.Add(autor);
 		}
-		for(int o = 0; o < autores.Count; o++)
+		Console.WriteLine("Desea ver datos de las pinturas? Y/N");
+		string asd = Console.ReadLine();
+		if (asd.Equals("y"))
 		{
-			pintura.Mostrar();
-			autor.Mostrar();
+			Mostrando<Pintura>(pinturas);
 		}
+
 	}
+    public static void Mostrando<T>(List<T> a)
+    {
+        foreach (object c in a)
+        {
+            MethodInfo[] metodos = c.GetType().GetMethods();
+            foreach (MethodInfo metodo in metodos)
+            {
+                if (metodo.Name.Equals("Mostrar"))
+                {
+                    try
+                    {
+                        metodo.Invoke(c, null);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Error al invocar el método: {ex.Message}");
+                    }
+                }
+            }
+        }
+    }
 }
