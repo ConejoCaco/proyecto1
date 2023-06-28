@@ -8,22 +8,22 @@ namespace proyecto1
 {
 	class Tamanio
 	{
-		private float ancho;
-		private float alto;
+		private double ancho;
+		private double alto;
 
-		public float Ancho
+		public double Ancho
 		{
 			get { return ancho; }
 			set { ancho = value; }
 		}
 
-		public float Alto
+		public double Alto
 		{
 			get { return alto; }
 			set { alto = value; }
 		}
 
-		Tamanio(float ancho,float alto)
+		public Tamanio(double ancho, double alto)
 		{
 			this.ancho = ancho;
 			this.alto = alto;

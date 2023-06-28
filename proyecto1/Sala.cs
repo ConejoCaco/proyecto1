@@ -11,10 +11,10 @@ namespace proyecto1
         //la pintura que se encuentra dentro con el encargado creo*2 
 		private string nombreSala;
 		private bool tieneCierre, tieneAlarma;
-		private float temperatura;
+		private double temperatura;
 		private int lamparas;
-
-
+        Encargado encargado;
+        
         public string NombreSala
         {
             get { return nombreSala; }
@@ -33,7 +33,7 @@ namespace proyecto1
             set { tieneAlarma = value; }
         }
 
-        public float Temperatura
+        public double Temperatura
         {
             get { return temperatura; }
             set { temperatura = value; }
@@ -44,15 +44,14 @@ namespace proyecto1
             get { return lamparas; }
             set { lamparas = value; }
         }
-        Sala(string nombreSala, bool tieneCierre, bool tieneAlarma, float temperatura, int lamparas)
+        public Sala(string nombreSala, bool tieneCierre, bool tieneAlarma, double temperatura, int lamparas, Encargado x)
         {
             this.nombreSala = nombreSala;
             this.tieneCierre = tieneCierre;
             this.tieneAlarma = tieneAlarma;
             this.temperatura = temperatura;
             this.lamparas = lamparas;
+            this.encargado = x;
         }
-
-
     }
 }

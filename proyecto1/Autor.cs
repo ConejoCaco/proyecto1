@@ -23,7 +23,7 @@ namespace proyecto1
             get { return nacionalidad; }
             set { nacionalidad = value; }
         }
-        Autor(string nombre, string rut, string apellido, string nacionalidad)
+        public Autor(string nombre, string rut, string apellido, string nacionalidad)
 		{
 			this.Nombre = nombre;
 			this.Rut = rut;

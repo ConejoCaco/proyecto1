@@ -8,7 +8,14 @@ namespace proyecto1
 {
 	internal class FichaIngreso
 	{
-
-		//sala y la pintura disponible de la sala? eso creo
+		Sala sala;
+		Pintura pintura;
+		
+		public FichaIngreso(Sala sala, Pintura pintura)
+		{
+			this.sala = sala;
+			this.pintura = pintura;
+		}
+		//sala y la pintura disponible de la sala
 	}
 }
