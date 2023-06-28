@@ -44,6 +44,14 @@ namespace proyecto1
             get { return lamparas; }
             set { lamparas = value; }
         }
+        Sala(string nombreSala, bool tieneCierre, bool tieneAlarma, float temperatura, int lamparas)
+        {
+            this.nombreSala = nombreSala;
+            this.tieneCierre = tieneCierre;
+            this.tieneAlarma = tieneAlarma;
+            this.temperatura = temperatura;
+            this.lamparas = lamparas;
+        }
 
 
     }
