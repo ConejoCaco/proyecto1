@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,17 +9,11 @@ namespace proyecto1
 {
 	internal class Pintura
 	{
-		private string nombreAutor;
-		private string nombre;
-		private string tecnica;
-		private string genero;
+		private string nombre, tecnica, genero;
 		private string fechaCreacion;
 		private int id;
-		public string NombreAutor
-		{
-			get { return nombreAutor; }
-			set { nombreAutor = value; }
-		}
+		Tamanio tamanio;
+		Autor autor;
 
 		public string Nombre
 		{
@@ -49,15 +44,20 @@ namespace proyecto1
 			get { return id; }
 			set { id = value; }
 		}
-
-        Pintura(int id,string nombreAutor, string nombre, string tecnica, string genero, string fechaCreacion)
-        {
+		public Pintura( string nombre, string tecnica, string genero, string fechaCreacion, int id,Autor autor,Tamanio tamanio)
+		{
+			
+			this.nombre = nombre;
+			this.tecnica = tecnica;
+			this.genero = genero;
+			this.fechaCreacion = fechaCreacion;
 			this.id = id;
-            this.nombreAutor = nombreAutor;
-            this.nombre = nombre;
-            this.tecnica = tecnica;
-            this.genero = genero;
-            this.fechaCreacion = fechaCreacion;
-        }
-    }
+			this.tamanio = tamanio;
+			this.autor = autor;
+		}
+		public void Mostrar()
+		{
+			Console.WriteLine($"Nombre: {nombre}\nTecnica: {tecnica} \nGenero: {genero} \nFecha de Creacion: {fechaCreacion}\nAlto: {this.tamanio.Alto}\n Ancho: {this.tamanio.Ancho}");
+		}
+	}
 }
