@@ -51,5 +51,7 @@ class Program
 		fichas.Add(fichaingreso);
 		pinturas.Add(pintura);
 		autores.Add(autor);
+		pintura.Mostrar();
+		autor.Mostrar();
 	}
 }

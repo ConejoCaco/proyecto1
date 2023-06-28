@@ -32,6 +32,7 @@ namespace proyecto1
 		}
 		public void Mostrar()
 		{
+			Console.WriteLine("Datos del Autor");
 			Console.WriteLine($"Nombre Autor: {Nombre}\nApellido: {apellido}\nRut: {Rut}\nNacionalidad: {nacionalidad}");
 		}
 	}
