@@ -57,7 +57,7 @@ namespace proyecto1
 		}
 		public void Mostrar()
 		{
-			Console.WriteLine("Datos de la Pintura");
+			Console.WriteLine("Datos de la Pintura\n");
 			Console.WriteLine($"Nombre: {nombre}\nTecnica: {tecnica} \nGenero: {genero} \nFecha de Creacion: {fechaCreacion}\nAlto: {this.tamanio.Alto}\n Ancho: {this.tamanio.Ancho}");
 		}
 	}

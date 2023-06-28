@@ -16,42 +16,48 @@ class Program
 		List<FichaIngreso> fichas = new List<FichaIngreso>();
 		List<Pintura> pinturas = new List<Pintura>();
 		List<Autor> autores = new List<Autor>();
+		int forse = Convert.ToInt32(Console.ReadLine());
+		for(int i = 0; i <forse;i++)
+		{
+			Console.Write("Nombre Autor: ");
+			string x = Console.ReadLine();
+			Console.WriteLine("Apellido: ");
+			string y = Console.ReadLine();
+			Console.WriteLine("Nacionalidad");
+			string a = Console.ReadLine();
+			Console.WriteLine("Rut: ");
+			string rut = Console.ReadLine();
+			Autor autor = new Autor(x, rut, y, a);
 
-		Console.Write("Nombre Autor: ");
-		string x = Console.ReadLine();
-		Console.WriteLine("Apellido: ");
-		string y = Console.ReadLine();
-		Console.WriteLine("Nacionalidad");
-		string a = Console.ReadLine();
-		Console.WriteLine("Rut: ");
-		string rut = Console.ReadLine();
-		Autor autor = new Autor(x,rut,y,a);
+			Console.Write("Nombre de la Pintura: ");
+			string q = Console.ReadLine();
+			Console.WriteLine("Tecnica: ");
+			string w = Console.ReadLine();
+			Console.WriteLine("Genero");
+			string e = Console.ReadLine();
+			Console.WriteLine("Fecha de Creacion: ");
+			string fecha = Console.ReadLine();
+			Console.WriteLine("Id: ");
+			int id = Convert.ToInt32(Console.ReadLine());
+			Console.WriteLine("Ancho: ");
+			double dob = Convert.ToDouble(Console.ReadLine());
+			Console.WriteLine("Alto: ");
+			double dob1 = Convert.ToDouble(Console.ReadLine());
 
-		Console.Write("Nombre de la Pintura: ");
-		string q = Console.ReadLine();
-		Console.WriteLine("Tecnica: ");
-		string w = Console.ReadLine();
-		Console.WriteLine("Genero");
-		string e = Console.ReadLine();
-		Console.WriteLine("Fecha de Creacion: ");
-		string fecha = Console.ReadLine();
-		Console.WriteLine("Id: ");
-		int id = Convert.ToInt32(Console.ReadLine());
-		Console.WriteLine("Ancho: ");
-		double dob = Convert.ToDouble(Console.ReadLine());
-		Console.WriteLine("Alto: ");
-		double dob1 = Convert.ToDouble(Console.ReadLine());
-		
-		Tamanio tamanio = new Tamanio(dob, dob1);
+			Tamanio tamanio = new Tamanio(dob, dob1);
 
-		Pintura pintura = new Pintura(q,w,e,fecha,id,autor,tamanio);
+			Pintura pintura = new Pintura(q, w, e, fecha, id, autor, tamanio);
 
-		FichaIngreso fichaingreso = new FichaIngreso(sala1, pintura);
+			FichaIngreso fichaingreso = new FichaIngreso(sala1, pintura);
 
-		fichas.Add(fichaingreso);
-		pinturas.Add(pintura);
-		autores.Add(autor);
-		pintura.Mostrar();
-		autor.Mostrar();
+			fichas.Add(fichaingreso);
+			pinturas.Add(pintura);
+			autores.Add(autor);
+		}
+		for(int o = 0; o < autores.Count; o++)
+		{
+			pintura.Mostrar();
+			autor.Mostrar();
+		}
 	}
 }
