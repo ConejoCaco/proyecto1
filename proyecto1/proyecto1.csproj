@@ -11,4 +11,8 @@
     <None Remove="Encargado.cs~RF326c10b8.TMP" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Downloads\TestProjectNUniti\TestProjectNUniti\TestProjectNUniti\TestProjectNUniti.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -23,8 +23,8 @@ namespace proyecto1
         }
 		Encargado(string nombre, string rut, string profesion, string anioIngreso)
 		{
-			this.nombre = nombre;
-			this.rut = rut;
+			this.Nombre = nombre;
+			this.Rut = rut;
 			this.profesion = profesion;
 			this.anioIngreso = anioIngreso;
 		}

@@ -10,6 +10,7 @@ namespace proyecto1
 	{
 		private string apellido;
 		private string nacionalidad;
+		
 
         public string Apellido
         {
@@ -24,10 +25,11 @@ namespace proyecto1
         }
         Autor(string nombre, string rut, string apellido, string nacionalidad)
 		{
-			this.nombre = nombre;
-			this.rut = rut;
+			this.Nombre = nombre;
+			this.Rut = rut;
 			this.apellido = apellido;
 			this.nacionalidad = nacionalidad;
 		}
+
 	}
 }
