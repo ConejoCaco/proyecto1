@@ -49,5 +49,15 @@ namespace proyecto1
 			get { return id; }
 			set { id = value; }
 		}
-	}
+
+        Pintura(int id,string nombreAutor, string nombre, string tecnica, string genero, string fechaCreacion)
+        {
+			this.id = id;
+            this.nombreAutor = nombreAutor;
+            this.nombre = nombre;
+            this.tecnica = tecnica;
+            this.genero = genero;
+            this.fechaCreacion = fechaCreacion;
+        }
+    }
 }
