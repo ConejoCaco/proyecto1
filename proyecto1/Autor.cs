@@ -30,6 +30,9 @@ namespace proyecto1
 			this.apellido = apellido;
 			this.nacionalidad = nacionalidad;
 		}
-
+		public void Mostrar()
+		{
+			Console.WriteLine($"Nombre Autor: {Nombre}\nApellido: {apellido}\nRut: {Rut}\nNacionalidad: {nacionalidad}");
+		}
 	}
 }

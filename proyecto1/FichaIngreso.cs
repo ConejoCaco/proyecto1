@@ -16,6 +16,7 @@ namespace proyecto1
 			this.sala = sala;
 			this.pintura = pintura;
 		}
+		
 		//sala y la pintura disponible de la sala
 	}
 }

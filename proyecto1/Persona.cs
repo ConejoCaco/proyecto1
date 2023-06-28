@@ -20,5 +20,6 @@ namespace proyecto1
 			get { return rut; }
 			set { rut = value; }
 		}
+		
 	}
 }

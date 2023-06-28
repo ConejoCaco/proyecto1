@@ -21,10 +21,6 @@ namespace proyecto1
             get { return anioIngreso; }
             set { anioIngreso = value; }
         }
-		public Encargado(string nombre)
-		{
-			this.Nombre = nombre;
-		}
 		public Encargado(string nombre, string rut, string profesion, string anioIngreso)
 		{
 			this.Nombre = nombre;
