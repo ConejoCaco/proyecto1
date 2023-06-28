@@ -22,5 +22,12 @@ namespace proyecto1
             get { return nacionalidad; }
             set { nacionalidad = value; }
         }
+        Autor(string nombre, string rut, string apellido, string nacionalidad)
+		{
+			this.nombre = nombre;
+			this.rut = rut;
+			this.apellido = apellido;
+			this.nacionalidad = nacionalidad;
+		}
 	}
 }

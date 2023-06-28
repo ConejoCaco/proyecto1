@@ -9,7 +9,17 @@ namespace proyecto1
 	internal class Persona
 	{
 		//nose si hacerlos protected y el set get
-		public string nombre;
-		public string rut;
+		protected string nombre;
+		protected string rut;
+		public string Nombre
+		{
+			get { return nombre; }
+			set { nombre = value; }
+		}
+		public string Rut
+		{
+			get { return rut; }
+			set { rut = value; }
+		}
 	}
 }
