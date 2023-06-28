@@ -22,5 +22,12 @@ namespace proyecto1
 			get { return alto; }
 			set { alto = value; }
 		}
+
+		Tamanio(float ancho,float alto)
+		{
+			this.ancho = ancho;
+			this.alto = alto;
+
+		}
 	}
 }
